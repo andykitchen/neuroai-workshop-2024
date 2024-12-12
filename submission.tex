@@ -89,8 +89,8 @@ The field of artificial intelligence has been dominated by extrinsic
 learning approaches, where models are trained using optimization
 algorithms like gradient descent. This method, while effective for
 specific tasks, fundamentally separates the process of learning from
-the behavior of the model itself. Learning is treated as a discrete,
-externally imposed phase, distinct from the model’s operation once
+the behaviour of the model itself. Learning is treated as a discrete,
+externally imposed phase, distinct from the model's operation once
 training is complete. This artificial separation imposes significant
 limitations, particularly in terms of adaptability, efficiency, and the
 alignment of AI systems with natural intelligence.
@@ -132,7 +132,7 @@ systems capable of intrinsic, motivated learning.
 
 Hebbian learning, often summarized by the phrase ``cells that fire
 together, wire together,'' has long been a foundational principle
-in neuroscience and has inspired numerious approaches in artificial
+in neuroscience and has inspired numerous approaches in artificial
 intelligence. While this form of learning captures an essential aspect of
 synaptic plasticity in biological brains, the current implementations in
 AI systems are too simplistic and limited in their scope. In many cases,
@@ -140,12 +140,12 @@ the application of Hebbian-like mechanisms has failed to deliver the
 flexibility, generality, and adaptability seen in natural intelligence.
 
 A key limitation of most Hebbian-inspired learning algorithms is
-their reliance on pairwise correlations between neurons or
+their reliance on pair-wise correlations between neurons or
 units. This approach, while elegant in its simplicity,
 lacks the sophistication needed for complex task-solving and robust
 generalization. Hebbian rules, as implemented in many artificial systems,
 typically capture only low-order associations, making them prone
-to overfitting and incapable of handling more abstract, higher-order
+to over-fitting and incapable of handling more abstract, higher-order
 learning. Furthermore, these simple Hebbian mechanisms often fall
 short when learning from sparse feedback is required.
 As a result, they typically perform poorly compared to
@@ -181,7 +181,7 @@ to perform ``in-context learning.'' \cite{dong2024surveyincontextlearning}
 This form of learning allows models to adapt their responses based on
 the context provided in a conversation or task, simulating a level
 of real-time adjustment and flexibility. While in-context learning
-represents a shift away from the rigid, pre-trained behaviors of earlier
+represents a shift away from the rigid, pre-trained behaviours of earlier
 models, it still falls short of true intrinsic learning. The underlying
 mechanics of LLMs remain fundamentally symbolic and static, limiting
 their adaptability and preventing genuine integration of learning into
@@ -190,7 +190,7 @@ their operational dynamics.
 At its core, in-context learning in LLMs is not learning in the
 traditional sense. The model does not internalize new knowledge or
 adjust its dynamics based on new inputs; rather, it generates responses
-by leveraging pre-trained patterns and statistical correlations learned
+using pre-trained patterns and statistical correlations learned
 during massive training phases. The system does not truly adapt to novel
 information in real time but instead performs a form of pattern-matching
 within its fixed knowledge base. This symbolic, non-integrated approach
@@ -200,7 +200,7 @@ and lack the ability to evolve with experience.
 
 One of the primary limitations of this approach is its rigid reliance
 on pre-defined structures. In-context learning simulates flexibility
-by shifting focus based on input, but the system’s behavior is still
+by shifting focus based on input, but the system's behaviour is still
 driven by static representations learned during its original training. The
 model operates within the bounds of its existing knowledge, drawing on
 token-level correlations rather than developing a deeper understanding
@@ -211,7 +211,7 @@ characterizes intrinsic learning processes in natural systems.
 Moreover, in-context learning lacks the continuous, feedback-driven
 integration seen in natural intelligence. In humans, learning is a
 constant process intertwined with cognition, where feedback from actions
-and environmental interactions directly influences future behavior. LLMs,
+and environmental interactions directly influences future behaviour. LLMs,
 on the other hand, operate in a distinct separation between training and
 inference. The model can respond contextually, but once the interaction
 ends, no information is retained or incorporated into its future
@@ -234,21 +234,21 @@ Contrary to this avoidance of chaos, recent work in neurodynamics suggests
 that chaotic processes, when harnessed properly, could enhance intrinsic
 learning. The brain's neurodynamics exhibit properties of self-organized
 criticality (SOC), where the system operates near the edge of chaos,
-displaying both stochastic and deterministic behaviors simultaneously
+displaying both stochastic and deterministic behaviours simultaneously
 \cite{Habibollahi2023,ovchinnikov2021,Ovchinnikov_2016}. This criticality
 is not an undesirable side effect, but a functional feature that allows
 the brain to balance stability with adaptability, enabling rapid learning
 from minimal data. In chaotic systems, small perturbations can lead to
-significant changes in system behavior, a property that could allow AI
+significant changes in system behaviour, a property that could allow AI
 systems to adapt more flexibly and rapidly to new information.
 
 In contrast, today's AI models avoid this dynamism. They are optimized
-for smooth behavior, employing gradient-based methods that inherently
+for smooth behaviour, employing gradient-based methods that inherently
 limit the system's ability to have rich internal dynamics.  This reliance
 on external optimization, such as gradient descent, means that models
 can only learn when explicitly guided by an optimization algorithm,
 separating learning from the model's functioning. As a result, AI systems
-are unable to dynamically adjust their behavior without undergoing a
+are unable to dynamically adjust their behaviour without undergoing a
 retraining process that often relies on large quantities of data and
 computational power.
 
@@ -278,7 +278,7 @@ DishBrain \cite{Kagan2022} represents a significant example of
 controlled intrinsic learning in biological neural networks, offering
 insights directly relevant to the development of intrinsic learning
 systems. DishBrain demonstrates that neurons, when integrated into a
-structured environment, exhibit adaptive goal-directed behavior with
+structured environment, exhibit adaptive goal-directed behaviour with
 minimal external intervention. This real-time, closed-loop interaction
 between neurons and a simulated game-world highlights the potential for
 systems to self-organize and learn intrinsically through direct feedback.
@@ -290,7 +290,7 @@ contrasts starkly with the rigid, task-specific optimization seen in
 modern AI, where learning is often slow and dependent on vast datasets. By
 embedding learning within the dynamics of the system itself, DishBrain
 exemplifies a model of intrinsic learning where the boundaries between
-cognition and adaptation blur. The goal-directed behavior emerging from
+cognition and adaptation blur. The goal-directed behaviour emerging from
 these systems guides us toward future AI algorithms could operate more
 like natural intelligence --- adapting continuously and intrinsically
 in response to environmental stimuli.
@@ -304,12 +304,12 @@ intelligence which learns intrinsically through continuous interaction
 with the environment. Hebbian-based approaches, though biologically
 inspired, remain overly simplistic and sometimes functionally equivalent
 to gradient descent. Embracing chaos, as seen in neurodynamic models,
-could lead to more adaptive, self-organizing AI systems by leveraging
+could lead to more adaptive, self-organizing AI systems by harnessing
 the unpredictability and flexibility that chaos and criticality offers.
 
 In this context, DishBrain offers a glimpse into the future of intrinsic
 learning by integrating biological neurons into AI systems. Demonstrating
-real-time, goal-directed behavior through active inference, DishBrain
+real-time, goal-directed behaviour through active inference, DishBrain
 exemplifies how adaptive intelligence can emerge from minimal external
 guidance. This approach suggests a pathway for AI systems that learn
 organically, moving beyond more rigid examples like in-context learning
